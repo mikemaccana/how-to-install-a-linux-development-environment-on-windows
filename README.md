@@ -81,7 +81,9 @@ If you've already installed Ubuntu, just convert our exsiting WSl1 Ubuntu to WSL
 
 ## If you need to: enable Virtualisation in UEFI/BIOS
 
-You may have to go into your UEFI/BIOS and enable Virtualisation. You can reboot to your UEFI/BIOS from inside Windows. Open the Settings app and csearch for "Recovery Options", and "Restart Now"/
+My Surface book had it on, my home-built desktop needed it to be enabled.
+
+You may have to go into your UEFI/BIOS and enable Virtualisation. You can reboot to your UEFI/BIOS from inside Windows. Open the Settings app, search for "Recovery Options", and "Restart Now".
 
 When your PC reboots, it will go into Advanced startup. Go to “Troubleshoot -> Advanced options" and click on the "UEFI Firmware Settings" option.
 
@@ -95,7 +97,7 @@ Open terminal settings and change:
 
     "copyOnSelect": true,
 
-Then look at the profiles. Find the `Ubuntu` profile. See the Ubuntu profile has a UUID? Change the default profile UUID to the Ubuntu UUID.
+Then look at the profiles. Find the `Ubuntu` profile. See the Ubuntu profile has a GUID? Change the default profile GUID to the Ubuntu GUID.
 
 Also, because transparent terminals are cool, add this to the Ubuntu profile:
 
@@ -149,7 +151,7 @@ Open Ubuntu from Windows Terminal and set up your development environment:
 Typing your own password can get boring.
 
     export EDITOR=code
-    visudo
+    sudo visudo
 
 And edit the line below to as follows:
 
@@ -195,7 +197,7 @@ I like to add personal scripts and files to `~/bin`
 
 ### Configure git to ignore file mode changes
 
-Checking out a repo, some files seem to have changed in git, with no actual modification of their contents. What has changed is their Unix file modes (the `mod` in `chmod`) - let's disable this:
+Checking out a repo, some files seem to have changed in git, with no actual modification of their contents. What has changed is their Unix file modes (the `mod` in `chmod`) - let's disable this. Inside a project:
 
     git config core.fileMode false
 
