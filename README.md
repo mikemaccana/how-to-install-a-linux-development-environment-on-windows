@@ -61,13 +61,15 @@ Install Ubuntu from windows store - do this first, as docker and vscode will det
 
 ## Set WSL to WSL2
 
-Open Ubuntu from the start menu and and let it install.
-
-Have a message about Virtualisation needing to be enabled? See the next step.
 
 Currently, the older WSL1 is still the default. The new WSL2 (which uses a real Linux kernel):
 
     wsl --set-default-version 2
+    
+Open Ubuntu from the start menu and and let it install.
+
+Have a message about Virtualisation needing to be enabled? See the next step.
+
 
 This ensures distros you install subsequently will run on WSL 2.
 
