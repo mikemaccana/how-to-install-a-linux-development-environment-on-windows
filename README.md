@@ -81,7 +81,7 @@ If you've already installed Ubuntu, just convert our exsiting WSl1 Ubuntu to WSL
 
 ## If you need to: enable Virtualisation in UEFI/BIOS
 
-You may have to go into your UEFI/BIOS and enable Virtualisation. You can reboot to your UEFI/BIOS from inside Windows. Open the Settings app and click "Update and Security" > "Recovery", and "Restart Now"/
+You may have to go into your UEFI/BIOS and enable Virtualisation. You can reboot to your UEFI/BIOS from inside Windows. Open the Settings app and csearch for "Recovery Options", and "Restart Now"/
 
 When your PC reboots, it will go into Advanced startup. Go to “Troubleshoot -> Advanced options" and click on the "UEFI Firmware Settings" option.
 
