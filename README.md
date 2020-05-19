@@ -75,8 +75,6 @@ Let's install:
 
  - DockerDesktop
  - Git
- - Git Extensions
- - Git Large File Storage
  - Power Toys
  - Powershell
  - Visual Studio Code
