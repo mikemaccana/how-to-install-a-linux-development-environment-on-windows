@@ -4,7 +4,13 @@
 
 This a guide for people familiar with Linux and Unix environment, to create a development environment on Windows using WSL2 and Ubuntu.
 
-I don't work for Microsoft or Ubuntu - I [develop web apps and before that was a sysadmin](https://mikemaccana.com). For most of this time, my main machines have been either Linux or macOS. My fingers know bash's defaults, they type `/` to separate directories, `ctrl R` to search history, and edit lines with `ctrl ◀` and `ctrl ▶` without thinking. I select things in a terminal to automatically copy them and I click a mouse button to paste. In short, my developer profile is very Linux and Unix oriented. Much like you, I don't want to throw away that knowledge and muscle memory to use something different.
+I don't work for Microsoft or Ubuntu - I [develop web apps and before that was a Linux admin](https://mikemaccana.com). For most of this time, my main machines have been either Linux or macOS. This means:
+
+- My fingers know bash's defaults. I type `/` to separate directories, `ctrl R` to search history, and edit lines with `ctrl ◀` and `ctrl ▶` without thinking.
+- I select things in a terminal to automatically copy them and I click a mouse button to paste.
+- I know `grep`, `sed` `awk` and the usual ways of scraping and manipulating text on the console.
+
+In short, my developer profile is very Linux and Unix oriented. Much like you, I don't want to throw away that knowledge and muscle memory to use something different.
 
 ## Why WSL2?
 
@@ -26,6 +32,14 @@ Finally: **Windows is nice**. The inbuilt tools are modern and uncluttered, my d
 - Some things _will_ be different if you're used to another OS.
 
 - While storing your code on Linux makes things nice and fast, accessing files on Linux from Windows tools is still not as fast as accessing Windows files from Windows tools. In practice (as a node developer working on large TypeScript project) I find the current speed to not be an issue in my day to day work.
+
+## What goes where
+
+- Your code will be in the Linux filesystem, for speed.
+- Your language support (node, Python, Ruby, Rust. Go, Elixir etc) will in Linux. While Windows support for these languages much better than what it was, Linux is the primary supported OS.
+- Databases (I like Postgres) and Docker containers will be in Linux
+- IDEs will be in Windows (vscode installs a special WSL helper into Linux though)
+- Browsers will be in Windows (yes, WSL makes localhost work exactly like normal)
 
 ## Why this guide
 
@@ -61,19 +75,17 @@ Install Ubuntu from windows store - do this first, as docker and vscode will det
 
 ## Set WSL to WSL2
 
-
 Currently, the older WSL1 is still the default. The new WSL2 (which uses a real Linux kernel):
 
     wsl --set-default-version 2
-    
+
 Open Ubuntu from the start menu and and let it install.
 
 Have a message about Virtualisation needing to be enabled? See the next step.
 
-
 This ensures distros you install subsequently will run on WSL 2.
 
-If you've already installed Ubuntu, just convert our exsiting WSl1 Ubuntu to WSL2 run:
+If you've already installed Ubuntu, just convert our existing WSl1 Ubuntu to WSL2 run:
 
     wsl -l -v
     wsl --set-version Ubuntu 2
@@ -106,14 +118,18 @@ Also, because transparent terminals are cool, add this to the Ubuntu profile:
 
 ## Make git use Windows Credential Manager
 
-edit ~/bin/git-credential-manager
+`edit ~/bin/git-credential-manager`
+
+And make the file's contents be:
 
     #!/bin/bash
     exec '/mnt/c/Program Files/Git/mingw64/libexec/git-core/git-credential-manager.exe'
 
-chmod +x ~/bin/git-credential-manager
+Set the modes:
 
-edit ~/.gitconfig and add
+`chmod +x ~/bin/git-credential-manager`
+
+Then `edit ~/.gitconfig` and add
 
     [credential]
         helper = manager
@@ -205,4 +221,4 @@ Checking out a repo, some files seem to have changed in git, with no actual modi
 
 ## About the author
 
-I've been using Linux for a little over 20 years, including at places like Red Hat and IBMs dedicated Linux group. I'm the example `sudo` user in `/etc/sudoers` in a couple of distros.
+I've been using Linux for a little over 20 years, including at places like Red Hat and IBM's dedicated Linux group. I'm the example `sudo` user in `/etc/sudoers` in a couple of distros.
