@@ -2,7 +2,6 @@
 
 ## Using Ubuntu and WSL2
 
-* auto-gen TOC:
 {:toc}
 
 ## Why this guide
