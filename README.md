@@ -112,10 +112,10 @@ Run these two commands to enable WSL:
 
 Let's install:
 
-- DockerDesktop
-- Git
-- Power Toys
-- Powershell
+- DockerDesktop (the Windows apps adds `docker-compose` and other useful things to Linux)
+- Git (needed for Windows GUI tools)
+- Power Toys (for tiling window management)
+- Powershell (the latest one is faster)
 - Visual Studio Code
 - Windows Terminal
 
@@ -179,12 +179,6 @@ Then `edit ~/.gitconfig` and add
 
     [credential]
         helper = manager
-
-## Install Docker Edge for Windows
-
-https://download.docker.com/win/edge/Docker%20Desktop%20Installer.exe
-
-This adds `docker-compose` and other useful things to Linux.
 
 ## Set up Windows for development in WSL2
 
