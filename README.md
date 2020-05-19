@@ -1,6 +1,11 @@
+# How to install a Linux development environment on Windows
+
+## Using Ubuntu and WSL2
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+**Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
 
 - [How to install a Linux development environment on Windows](#how-to-install-a-linux-development-environment-on-windows)
   - [Using Ubuntu and WSL2](#using-ubuntu-and-wsl2)
@@ -35,12 +40,6 @@
   - [About the author](#about-the-author)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-# How to install a Linux development environment on Windows
-
-## Using Ubuntu and WSL2
-
-{:toc}
 
 ## Why this guide
 
@@ -94,7 +93,7 @@ There's a new Ubuntu release (20.04) and a new Windows release (20.04), both wit
 ## What goes where
 
 - Your code will be in the Linux filesystem, for speed.
-- Your language support (node, Python, Ruby, Rust. Go, Elixir etc) will in Linux. 
+- Your language support (node, Python, Ruby, Rust. Go, Elixir etc) will in Linux.
 - Databases (I like Postgres) and Docker containers will be in Linux
 - IDEs will be in Windows (vscode installs a special WSL helper into Linux though)
 - Browsers will be in Windows (yes, WSL makes localhost work exactly like normal)
@@ -113,14 +112,14 @@ Run these two commands to enable WSL:
 
 Let's install:
 
- - DockerDesktop
- - Git
- - Power Toys
- - Powershell
- - Visual Studio Code
- - Windows Terminal
+- DockerDesktop
+- Git
+- Power Toys
+- Powershell
+- Visual Studio Code
+- Windows Terminal
 
-Note: 'Ubuntu 20.04' isn't available by Winget, but will be soon. 
+Note: 'Ubuntu 20.04' isn't available by Winget, but will be soon.
 
     foreach ($app in 'DockerDesktop', 'Git', 'Power Toys', 'Powershell', 'Visual Studio Code', 'Windows Terminal') {  winget install $app }
 
