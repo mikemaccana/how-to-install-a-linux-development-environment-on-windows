@@ -1,4 +1,6 @@
-# How to install a Linux development environment on Windows using Ubuntu and WSL2
+# How to install a Linux development environment on Windows
+
+## Using Ubuntu and WSL2
 
 ## Why this guide
 
@@ -33,14 +35,6 @@ Finally: **Windows is nice**. The inbuilt tools are modern and uncluttered, my d
 
 - While storing your code on Linux makes things nice and fast, accessing files on Linux from Windows tools is still not as fast as accessing Windows files from Windows tools. In practice (as a node developer working on large TypeScript project) I find the current speed to not be an issue in my day to day work.
 
-## What goes where
-
-- Your code will be in the Linux filesystem, for speed.
-- Your language support (node, Python, Ruby, Rust. Go, Elixir etc) will in Linux. While Windows support for these languages much better than what it was, Linux is the primary supported OS.
-- Databases (I like Postgres) and Docker containers will be in Linux
-- IDEs will be in Windows (vscode installs a special WSL helper into Linux though)
-- Browsers will be in Windows (yes, WSL makes localhost work exactly like normal)
-
 ## Why this guide
 
 The aims for this guide as follows:
@@ -56,6 +50,14 @@ The aims for this guide as follows:
 ## Right now it's a great tme to try WSL
 
 There's a new Ubuntu release (20.04) and a new Windows release (20.04), both with a bunch of new features.
+
+## What goes where
+
+- Your code will be in the Linux filesystem, for speed.
+- Your language support (node, Python, Ruby, Rust. Go, Elixir etc) will in Linux. While Windows support for these languages much better than what it was, Linux is the primary supported OS.
+- Databases (I like Postgres) and Docker containers will be in Linux
+- IDEs will be in Windows (vscode installs a special WSL helper into Linux though)
+- Browsers will be in Windows (yes, WSL makes localhost work exactly like normal)
 
 ## Enable WSL2
 
