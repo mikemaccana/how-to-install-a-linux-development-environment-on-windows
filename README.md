@@ -7,7 +7,6 @@
 
 **Table of Contents** 
 
-  - [Using Ubuntu and WSL2](#using-ubuntu-and-wsl2)
   - [Why this guide](#why-this-guide)
   - [Why WSL2?](#why-wsl2)
   - [Why not WSL2?](#why-not-wsl2)
