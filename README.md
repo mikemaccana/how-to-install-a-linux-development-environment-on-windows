@@ -69,11 +69,9 @@ Run these two commands to enable WSL:
 
     dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 
-## Get Ubuntu and Windows Terminal from the Windows store
+## Get apps via Winget
 
-Install Windows Terminal.
-
-Install Ubuntu from windows store - do this first, as docker and vscode will detect.
+    foreach ($app in 'DockerDesktop', 'Git', 'Power Toys', 'Powershell', 'Visual Studio Code', 'Ubuntu 20.04', 'Windows Terminal') {  winget install $app }
 
 ## Set WSL to WSL2
 
