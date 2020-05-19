@@ -25,7 +25,7 @@ Finally: **Windows is nice**. The inbuilt tools are modern and uncluttered, my d
 
 - Some things _will_ be different if you're used to another OS.
 
-- While storing your code on Linux makes things nice and fast, accessing fils on Linux from Windows tools is still not as fast as accessing Windows files from Windows tools. In practice (as a node developer working on large TypeScript project) I find the current speed to not be an issue in my day to day work.
+- While storing your code on Linux makes things nice and fast, accessing files on Linux from Windows tools is still not as fast as accessing Windows files from Windows tools. In practice (as a node developer working on large TypeScript project) I find the current speed to not be an issue in my day to day work.
 
 ## Why this guide
 
