@@ -5,9 +5,8 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-**Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
+**Table of Contents** 
 
-- [How to install a Linux development environment on Windows](#how-to-install-a-linux-development-environment-on-windows)
   - [Using Ubuntu and WSL2](#using-ubuntu-and-wsl2)
   - [Why this guide](#why-this-guide)
   - [Why WSL2?](#why-wsl2)
