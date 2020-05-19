@@ -2,6 +2,9 @@
 
 ## Using Ubuntu and WSL2
 
+* auto-gen TOC:
+{:toc}
+
 ## Why this guide
 
 This a guide for people familiar with Linux and Unix environment, to create a development environment on Windows using WSL2 and Ubuntu.
