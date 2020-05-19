@@ -150,7 +150,7 @@ Pin `\\wsl$\Ubuntu` to Quick Access
 
 ### Use a tiling window manager
 
-If you're the tiling window manager, check out FancyZones. It's part of PowerToys.
+If you're the tiling window manager, check out [FancyZones](https://github.com/microsoft/PowerToys/tree/master/src/modules/fancyzones). It's part of [PowerToys](https://github.com/microsoft/PowerToys).
 
 ## Set up Ubuntu for development in WSL2
 
@@ -197,7 +197,7 @@ I code primarily on node.js, so I'd install
 
 ### Make VScode open files using file:linenumber syntax
 
-I usually like to refer to my current editor as `edit`. `code -g` allows vscode to open a `filename:linenumber` and immediately to go that line number in a file. It's not default because files can have a colon in them. I don't put colons in file names, so I add this to my `.bashrc`
+I usually like to refer to my current editor as `edit`. `code -g` allows vscode to open a `filename:linenumber` and immediately to go that line number in a file. VSCode doesn't do this by default, because some files can have a colon in them. I don't put colons in file names, so I add this to my `.bashrc`
 
     alias edit='code -g'
 
@@ -212,6 +212,20 @@ WSL2 comes with a Debian package called `wslu` which contains a command to open 
 I like to add personal scripts and files to `~/bin`
 
     export PATH=\$PATH:~/bin
+
+### Add any databases or other Linux services
+
+WSL2's Ubuntu uses a custom `/init`, which uses `/etc/init.d` style scripts.
+
+You can start, stop, check the status of these with:
+
+`sudo /etc/init.d/postgresql start`
+
+or
+
+`sudo service postgresql start`
+
+Replacing `start` with `stop` or `status` etc.
 
 ### Configure git to ignore file mode changes
 
