@@ -54,7 +54,7 @@ There's a new Ubuntu release (20.04) and a new Windows release (20.04), both wit
 ## What goes where
 
 - Your code will be in the Linux filesystem, for speed.
-- Your language support (node, Python, Ruby, Rust. Go, Elixir etc) will in Linux. While Windows support for these languages much better than what it was, Linux is the primary supported OS.
+- Your language support (node, Python, Ruby, Rust. Go, Elixir etc) will in Linux. 
 - Databases (I like Postgres) and Docker containers will be in Linux
 - IDEs will be in Windows (vscode installs a special WSL helper into Linux though)
 - Browsers will be in Windows (yes, WSL makes localhost work exactly like normal)
