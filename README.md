@@ -2,11 +2,13 @@
 
 ## Using Ubuntu and WSL2
 
+{:toc}
+
 ## Why this guide
 
 This a guide for people familiar with Linux and Unix environment, to create a development environment on Windows using WSL2 and Ubuntu.
 
-I don't work for Microsoft or Ubuntu - I [develop web apps and before that was a Linux admin](https://mikemaccana.com). For most of this time, my main machines have been either Linux or macOS. This means:
+I don't work for Microsoft or Canonical - I [develop web apps and before that was a Linux admin](https://mikemaccana.com). For most of this time, my main machines have been either Linux or macOS. This means:
 
 - My fingers know bash's defaults. I type `/` to separate directories, `ctrl R` to search history, and edit lines with `ctrl ◀` and `ctrl ▶` without thinking.
 - I select things in a terminal to automatically copy them and I click a mouse button to paste.
@@ -54,7 +56,7 @@ There's a new Ubuntu release (20.04) and a new Windows release (20.04), both wit
 ## What goes where
 
 - Your code will be in the Linux filesystem, for speed.
-- Your language support (node, Python, Ruby, Rust. Go, Elixir etc) will in Linux. While Windows support for these languages much better than what it was, Linux is the primary supported OS.
+- Your language support (node, Python, Ruby, Rust. Go, Elixir etc) will in Linux. 
 - Databases (I like Postgres) and Docker containers will be in Linux
 - IDEs will be in Windows (vscode installs a special WSL helper into Linux though)
 - Browsers will be in Windows (yes, WSL makes localhost work exactly like normal)
@@ -69,11 +71,20 @@ Run these two commands to enable WSL:
 
     dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 
-## Get Ubuntu and Windows Terminal from the Windows store
+## Get apps via Winget
 
-Install Windows Terminal.
+Let's install:
 
-Install Ubuntu from windows store - do this first, as docker and vscode will detect.
+ - DockerDesktop
+ - Git
+ - Power Toys
+ - Powershell
+ - Visual Studio Code
+ - Windows Terminal
+
+Note: 'Ubuntu 20.04' isn't available by Winget, but will be soon. 
+
+    foreach ($app in 'DockerDesktop', 'Git', 'Power Toys', 'Powershell', 'Visual Studio Code', 'Windows Terminal') {  winget install $app }
 
 ## Set WSL to WSL2
 
@@ -100,10 +111,6 @@ My Surface book had it on, my home-built desktop needed it to be enabled.
 You may have to go into your UEFI/BIOS and enable Virtualisation. You can reboot to your UEFI/BIOS from inside Windows. Open the Settings app, search for "Recovery Options", and "Restart Now".
 
 When your PC reboots, it will go into Advanced startup. Go to “Troubleshoot -> Advanced options" and click on the "UEFI Firmware Settings" option.
-
-## Get VScode and Edge
-
-If you haven't got them already, you can also get [VSCode]() and [Edge]()
 
 ## Configure Terminal for Unix settings
 
