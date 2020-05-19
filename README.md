@@ -6,7 +6,7 @@
 
 This a guide for people familiar with Linux and Unix environment, to create a development environment on Windows using WSL2 and Ubuntu.
 
-I don't work for Microsoft or Ubuntu - I [develop web apps and before that was a Linux admin](https://mikemaccana.com). For most of this time, my main machines have been either Linux or macOS. This means:
+I don't work for Microsoft or Canonical - I [develop web apps and before that was a Linux admin](https://mikemaccana.com). For most of this time, my main machines have been either Linux or macOS. This means:
 
 - My fingers know bash's defaults. I type `/` to separate directories, `ctrl R` to search history, and edit lines with `ctrl ◀` and `ctrl ▶` without thinking.
 - I select things in a terminal to automatically copy them and I click a mouse button to paste.
