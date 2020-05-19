@@ -106,6 +106,15 @@ Run these two commands to enable WSL:
 
     dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 
+Then reboot.
+
+## If you need to: enable Virtualisation in UEFI/BIOS
+
+My Surface book had it on, my home-built desktop needed it to be enabled.
+
+You may have to go into your UEFI/BIOS and enable Virtualisation. You can reboot to your UEFI/BIOS from inside Windows. Open the Settings app, search for "Recovery Options", and "Restart Now".
+
+When your PC reboots, it will go into Advanced startup. Go to “Troubleshoot -> Advanced options" and click on the "UEFI Firmware Settings" option.
 
 ## Set WSL to WSL2
 
@@ -125,13 +134,6 @@ If you've already installed Ubuntu, just convert our existing WSl1 Ubuntu to WSL
     wsl --set-version Ubuntu 2
     wsl --set-default-version 2
 
-## If you need to: enable Virtualisation in UEFI/BIOS
-
-My Surface book had it on, my home-built desktop needed it to be enabled.
-
-You may have to go into your UEFI/BIOS and enable Virtualisation. You can reboot to your UEFI/BIOS from inside Windows. Open the Settings app, search for "Recovery Options", and "Restart Now".
-
-When your PC reboots, it will go into Advanced startup. Go to “Troubleshoot -> Advanced options" and click on the "UEFI Firmware Settings" option.
 
 
 ## Get apps via Winget
