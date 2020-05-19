@@ -71,7 +71,20 @@ Run these two commands to enable WSL:
 
 ## Get apps via Winget
 
-    foreach ($app in 'DockerDesktop', 'Git', 'Power Toys', 'Powershell', 'Visual Studio Code', 'Ubuntu 20.04', 'Windows Terminal') {  winget install $app }
+Let's install:
+
+ - DockerDesktop
+ - Git
+ - Git Extensions
+ - Git Large File Storage
+ - Power Toys
+ - Powershell
+ - Visual Studio Code
+ - Windows Terminal
+
+Note: 'Ubuntu 20.04' isn't available by Winget, but will be soon. 
+
+    foreach ($app in 'DockerDesktop', 'Git', 'Power Toys', 'Powershell', 'Visual Studio Code', 'Windows Terminal') {  winget install $app }
 
 ## Set WSL to WSL2
 
@@ -98,10 +111,6 @@ My Surface book had it on, my home-built desktop needed it to be enabled.
 You may have to go into your UEFI/BIOS and enable Virtualisation. You can reboot to your UEFI/BIOS from inside Windows. Open the Settings app, search for "Recovery Options", and "Restart Now".
 
 When your PC reboots, it will go into Advanced startup. Go to “Troubleshoot -> Advanced options" and click on the "UEFI Firmware Settings" option.
-
-## Get VScode and Edge
-
-If you haven't got them already, you can also get [VSCode]() and [Edge]()
 
 ## Configure Terminal for Unix settings
 
