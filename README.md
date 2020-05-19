@@ -163,6 +163,9 @@ Also, because transparent terminals are cool, add this to the Ubuntu profile:
 
     "useAcrylic": true,
     "acrylicOpacity": 0.9
+    
+
+Browse [iterm2colorschemes.com](https://iterm2colorschemes.com/) and download the equivalent named Windows Terminal file from [their Windows Terminal color schemes](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/windowsterminal). Open **Settings** and paste it into the `schemes` section, then select that scheme name for the profile you want to use it with in `profiles`.    
 
 ## Make git use Windows Credential Manager
 
