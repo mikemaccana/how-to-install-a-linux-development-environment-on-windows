@@ -47,7 +47,7 @@ The aims for this guide as follows:
 
 - Best practices, like keeping your code on the Linux side to make them faster.
 
-## Right now it's a great tme to try WSL
+## Right now it's a great time to try WSL
 
 There's a new Ubuntu release (20.04) and a new Windows release (20.04), both with a bunch of new features.
 
