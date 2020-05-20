@@ -5,37 +5,35 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-**Table of Contents** 
 
-  - [Why this guide](#why-this-guide)
-  - [Why WSL2?](#why-wsl2)
-  - [Why not WSL2?](#why-not-wsl2)
-  - [Why this guide](#why-this-guide-1)
-  - [Right now it's a great time to try WSL](#right-now-its-a-great-time-to-try-wsl)
-  - [What goes where](#what-goes-where)
-  - [Enable WSL2](#enable-wsl2)
-  - [Get apps via Winget](#get-apps-via-winget)
-  - [Set WSL to WSL2](#set-wsl-to-wsl2)
-  - [If you need to: enable Virtualisation in UEFI/BIOS](#if-you-need-to-enable-virtualisation-in-uefibios)
-  - [Configure Terminal for Unix settings](#configure-terminal-for-unix-settings)
-  - [Make git use Windows Credential Manager](#make-git-use-windows-credential-manager)
-  - [Install Docker Edge for Windows](#install-docker-edge-for-windows)
-  - [Set up Windows for development in WSL2](#set-up-windows-for-development-in-wsl2)
-    - [Add Ubuntu to Windows Explorer](#add-ubuntu-to-windows-explorer)
-    - [Use a tiling window manager](#use-a-tiling-window-manager)
-  - [Set up Ubuntu for development in WSL2](#set-up-ubuntu-for-development-in-wsl2)
-    - [Install Linux developer Tools](#install-linux-developer-tools)
-    - [Quiet Ubuntu's login](#quiet-ubuntus-login)
-    - [Use sudo without a password](#use-sudo-without-a-password)
-    - [Make tab completion work with any case](#make-tab-completion-work-with-any-case)
-    - [Add other development tools](#add-other-development-tools)
-    - [Make VScode open files using file:linenumber syntax](#make-vscode-open-files-using-filelinenumber-syntax)
-    - [Add an `open` command to open files with Windows apps](#add-an-open-command-to-open-files-with-windows-apps)
-    - [Add ~/bin to your PATH](#add-bin-to-your-path)
-    - [Add any databases or other Linux services](#add-any-databases-or-other-linux-services)
-    - [Configure git to ignore file mode changes](#configure-git-to-ignore-file-mode-changes)
-  - [Conclusion](#conclusion)
-  - [About the author](#about-the-author)
+- [Why this guide](#why-this-guide)
+- [Why WSL2?](#why-wsl2)
+- [Why not WSL2?](#why-not-wsl2)
+- [Why this guide](#why-this-guide-1)
+- [Right now it's a great time to try WSL](#right-now-its-a-great-time-to-try-wsl)
+- [What goes where](#what-goes-where)
+- [Enable WSL2](#enable-wsl2)
+- [If you need to: enable Virtualisation in UEFI/BIOS](#if-you-need-to-enable-virtualisation-in-uefibios)
+- [Set WSL to WSL2](#set-wsl-to-wsl2)
+- [Get apps via Winget](#get-apps-via-winget)
+- [Configure Terminal for Unix settings](#configure-terminal-for-unix-settings)
+- [Make git use Windows Credential Manager](#make-git-use-windows-credential-manager)
+- [Set up Windows for development in WSL2](#set-up-windows-for-development-in-wsl2)
+  - [Add Ubuntu to Windows Explorer](#add-ubuntu-to-windows-explorer)
+  - [Use a tiling window manager](#use-a-tiling-window-manager)
+- [Set up Ubuntu for development in WSL2](#set-up-ubuntu-for-development-in-wsl2)
+  - [Install Linux developer Tools](#install-linux-developer-tools)
+  - [Quiet Ubuntu's login](#quiet-ubuntus-login)
+  - [Use sudo without a password](#use-sudo-without-a-password)
+  - [Make tab completion work with any case](#make-tab-completion-work-with-any-case)
+  - [Add other development tools](#add-other-development-tools)
+  - [Make VScode open files using file:linenumber syntax](#make-vscode-open-files-using-filelinenumber-syntax)
+  - [Add an `open` command to open files with Windows apps](#add-an-open-command-to-open-files-with-windows-apps)
+  - [Add ~/bin to your PATH](#add-bin-to-your-path)
+  - [Add any databases or other Linux services](#add-any-databases-or-other-linux-services)
+  - [Configure git to ignore file mode changes](#configure-git-to-ignore-file-mode-changes)
+- [Conclusion](#conclusion)
+- [About the author](#about-the-author)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -134,8 +132,6 @@ If you've already installed Ubuntu, just convert our existing WSl1 Ubuntu to WSL
     wsl --set-version Ubuntu 2
     wsl --set-default-version 2
 
-
-
 ## Get apps via Winget
 
 Let's install:
@@ -163,9 +159,8 @@ Also, because transparent terminals are cool, add this to the Ubuntu profile:
 
     "useAcrylic": true,
     "acrylicOpacity": 0.9
-    
 
-Browse [iterm2colorschemes.com](https://iterm2colorschemes.com/) and download the equivalent named Windows Terminal file from [their Windows Terminal color schemes](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/windowsterminal). Open **Settings** and paste it into the `schemes` section, then select that scheme name for the profile you want to use it with in `profiles`.    
+Browse [iterm2colorschemes.com](https://iterm2colorschemes.com/) and download the equivalent named Windows Terminal file from [their Windows Terminal color schemes](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/windowsterminal). Open **Settings** and paste it into the `schemes` section, then select that scheme name for the profile you want to use it with in `profiles`.
 
 ## Make git use Windows Credential Manager
 
