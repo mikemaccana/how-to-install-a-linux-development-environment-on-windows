@@ -134,6 +134,8 @@ If you've already installed Ubuntu, just convert our existing WSl1 Ubuntu to WSL
 
 ## Get apps via Winget
 
+Get [Winget]](https://www.microsoft.com/p/app-installer/9nblggh4nns1?ocid=9nblggh4nns1_ORSEARCH_Bing&rtc=1&activetab=pivot:overviewtab) if you don't have it already.
+
 Let's install:
 
 - DockerDesktop (the Windows apps adds `docker-compose` and other useful things to Linux)
