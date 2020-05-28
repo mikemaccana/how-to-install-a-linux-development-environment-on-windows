@@ -104,13 +104,11 @@ Run these two commands to enable WSL:
 
     dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 
-Then reboot.
+## Reboot (and enable Virtualisation in UEFI/BIOS if you need to)
 
-## If you need to: enable Virtualisation in UEFI/BIOS
+Surface devices have virtualisation turned on already,so you can just reboot.
 
-My Surface book had it on, my home-built desktop needed it to be enabled.
-
-You may have to go into your UEFI/BIOS and enable Virtualisation. You can reboot to your UEFI/BIOS from inside Windows. Open the Settings app, search for "Recovery Options", and "Restart Now".
+Otherwise, you may have to go into your UEFI/BIOS and enable Virtualisation. You can reboot to your UEFI/BIOS from inside Windows. Open the Settings app, search for "Recovery Options", and "Restart Now".
 
 When your PC reboots, it will go into Advanced startup. Go to “Troubleshoot -> Advanced options" and click on the "UEFI Firmware Settings" option.
 
