@@ -45,7 +45,7 @@ I don't work for Microsoft or Canonical - I [develop web apps and before that wa
 
 - My fingers know bash's defaults. I type `/` to separate directories, `ctrl R` to search history, and edit lines with `ctrl ◀` and `ctrl ▶` without thinking. I know `grep`, `sed` `awk` and the usual ways of scraping and manipulating text on the console.
 - I select things in a terminal to automatically copy them and I click a mouse button to paste.
-- The idea that anybody would want a file in anything other than 'LF' 
+- The idea that anybody would want a file in anything other than 'LF' line endings is alien to me.
 
 In short, my developer profile is very Linux and Unix oriented. Much like you, I don't want to throw away that knowledge and muscle memory to use something different.
 
