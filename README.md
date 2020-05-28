@@ -207,6 +207,13 @@ If you're the tiling window manager, check out [FancyZones](https://github.com/m
 
 Open Ubuntu from Windows Terminal and set up your development environment:
 
+### Make VScode the default editor, and open files using file:linenumber syntax
+
+I usually like to refer to my current editor as `edit`. `code -g` allows vscode to open a `filename:linenumber` and immediately to go that line number in a file. VSCode doesn't do this by default, because some files can have a colon in them. I don't put colons in file names, so I add this to my `.bashrc`
+
+    export EDITOR=code
+    alias edit='code -g'
+
 ### Install Linux developer Tools
 
     sudo apt install build-essential
@@ -219,7 +226,6 @@ Open Ubuntu from Windows Terminal and set up your development environment:
 
 Typing your own password can get boring.
 
-    export EDITOR=code
     sudo visudo
 
 And edit the line below to as follows:
@@ -245,12 +251,6 @@ I code primarily on node.js, so I'd install
 
     curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
     sudo apt-get install -y nodejs
-
-### Make VScode open files using file:linenumber syntax
-
-I usually like to refer to my current editor as `edit`. `code -g` allows vscode to open a `filename:linenumber` and immediately to go that line number in a file. VSCode doesn't do this by default, because some files can have a colon in them. I don't put colons in file names, so I add this to my `.bashrc`
-
-    alias edit='code -g'
 
 ### Add an `open` command to open files with Windows apps
 
