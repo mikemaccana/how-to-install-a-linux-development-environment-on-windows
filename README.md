@@ -184,6 +184,13 @@ Then `edit ~/.gitconfig` and add
 
 ## Set up Windows for development in WSL2
 
+### Ensure Windows git always uses LF line feeds (Unix-style)
+
+```
+git config --global core.autocrlf false
+git config --global core.eol lf
+``
+
 ### Add Ubuntu to Windows Explorer
 
 Pin `\\wsl$\Ubuntu` to Quick Access
