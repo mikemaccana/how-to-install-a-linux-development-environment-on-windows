@@ -147,7 +147,7 @@ Let's install:
 
 Note: 'Ubuntu 20.04' isn't available by Winget, but will be soon.
 
-    foreach ($app in 'DockerDesktop', 'Git', 'Power Toys', 'Powershell', 'Visual Studio Code', 'Windows Terminal') {  winget install $app }
+    foreach ($app in 'DockerDesktop', 'Git', 'Power Toys', 'Powershell', 'Visual Studio Code', 'Windows Terminal') {  winget install -e  $app }
 
 ## Configure Terminal for Unix settings
 
