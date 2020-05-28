@@ -134,7 +134,7 @@ If you've already installed Ubuntu, just convert our existing WSl1 Ubuntu to WSL
 
 ## Get apps via Winget
 
-Get [App Imntaller]](https://www.microsoft.com/p/app-installer/9nblggh4nns1?ocid=9nblggh4nns1_ORSEARCH_Bing&rtc=1&activetab=pivot:overviewtab) (which includes the `winget` command) if you don't have it already. 
+Get [App Installer](https://www.microsoft.com/p/app-installer/9nblggh4nns1?ocid=9nblggh4nns1_ORSEARCH_Bing&rtc=1&activetab=pivot:overviewtab) (which includes the `winget` command) if you don't have it already. 
 
 Let's install:
 
@@ -184,12 +184,16 @@ Then `edit ~/.gitconfig` and add
 
 ## Set up Windows for development in WSL2
 
-### Ensure Windows git always uses LF line feeds (Unix-style)
+### Ensure Windows git always uses LF line endings (Unix-style)
 
 ```
 git config --global core.autocrlf false
 git config --global core.eol lf
-``
+```
+
+### Ensure VScode always uses LF line endings (Unix-style) 
+
+In vscode, open 'Preferences', and search for 'eol'. Set `The default end of line character. ` to `/n`
 
 ### Add Ubuntu to Windows Explorer
 
