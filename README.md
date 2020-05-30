@@ -5,7 +5,6 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-
 - [Why this guide](#why-this-guide)
 - [Why WSL2?](#why-wsl2)
 - [Why not WSL2?](#why-not-wsl2)
@@ -132,7 +131,7 @@ If you've already installed Ubuntu, just convert our existing WSl1 Ubuntu to WSL
 
 ## Get apps via Winget
 
-Get [App Installer](https://www.microsoft.com/p/app-installer/9nblggh4nns1?ocid=9nblggh4nns1_ORSEARCH_Bing&rtc=1&activetab=pivot:overviewtab) (which includes the `winget` command) if you don't have it already. 
+Get [App Installer](https://www.microsoft.com/p/app-installer/9nblggh4nns1?ocid=9nblggh4nns1_ORSEARCH_Bing&rtc=1&activetab=pivot:overviewtab) (which includes the `winget` command) if you don't have it already.
 
 Let's install:
 
@@ -189,13 +188,17 @@ git config --global core.autocrlf false
 git config --global core.eol lf
 ```
 
-### Ensure VScode always uses LF line endings (Unix-style) 
+### Ensure VScode always uses LF line endings (Unix-style)
 
-In vscode, open 'Preferences', and search for 'eol'. Set `The default end of line character. ` to `/n`
+In vscode, open 'Preferences', and search for 'eol'. Set `The default end of line character.` to `/n`
+
+<img src="images/end-of-line.png">
 
 ### Add Ubuntu to Windows Explorer
 
 Pin `\\wsl$\Ubuntu` to Quick Access
+
+<img src="images/quick-access.png">
 
 ### Use a tiling window manager
 
@@ -276,11 +279,17 @@ or
 
 Replacing `start` with `stop` or `status` etc.
 
-### Configure git to ignore file mode changes
+### Configure git projects to ignore file mode changes
 
-Checking out a repo, some files seem to have changed in git, with no actual modification of their contents. What has changed is their Unix file modes (the `mod` in `chmod`) - let's disable this. Inside a project:
+Checking out a repo on your Linux box, Windows git tools may report some files seem to have changed, with no actual modification of their contents:
+
+<img src="images/file-modes.png">
+
+What has changed is their Unix file modes (the `mod` in `chmod`) - let's disable this. Inside a project:
 
     git config core.fileMode false
+
+<img src="images/file-modes-fixed.png">
 
 ## Conclusion
 
