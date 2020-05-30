@@ -1,5 +1,7 @@
 # How to install a Linux development environment on Windows
 
+<img src="images/wsl2-mikemaccana.jpg">
+
 ## Using Ubuntu and WSL2
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
