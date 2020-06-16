@@ -212,7 +212,9 @@ Open Ubuntu from Windows Terminal and set up your development environment:
 
 ### Make VScode the default editor, and open files using file:linenumber syntax
 
-I usually like to refer to my current editor as `edit`. `code -g` allows vscode to open a `filename:linenumber` and immediately to go that line number in a file. VSCode doesn't do this by default, because some files can have a colon in them. I don't put colons in file names, so I add this to my `.bashrc`
+A lot of Linux commands use `$EDITOR` to be the preferred editor. Let's set that to VScode.
+
+`code -g` allows vscode to open a `filename:linenumber` and immediately to go that line number in a file. VSCode doesn't do this by default, because some files can have a colon in them. I don't put colons in file names, and I like to be able to launch my editor with the alias `edit`, so I add this to my `.bashrc`
 
     export EDITOR=code
     alias edit='code -g'
@@ -241,7 +243,7 @@ After you save the file, `sudo` will no longer ask for passwords.
 
 ### Make tab completion work with any case
 
-Open .inputrc (create it if needed) and add:
+Open `.inputrc` (create it if needed) and add:
 
     set completion-ignore-case On
     $include /etc/inputrc
@@ -265,7 +267,7 @@ WSL2 comes with a Debian package called `wslu` which contains a command to open 
 
 I like to add personal scripts and files to `~/bin`
 
-    export PATH=\$PATH:~/bin
+    export PATH=$PATH:~/bin
 
 ### Add any databases or other Linux services
 
