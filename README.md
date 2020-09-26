@@ -204,6 +204,16 @@ Pin `\\wsl$\Ubuntu` to Quick Access
 
 <img src="images/quick-access.png">
 
+### Map Ubuntu to Widnows Drive
+
+This allows you to access Linux's file system from applications which cannot access netowrk paths e.g. PowerShell.
+
+<img src="images/map-network-drive-menu.jpg"><br />
+
+<img src="images/map-network-drive-wizard.jpg" style="max-height:300px"><br />
+
+<img src="images/map-network-drive-powershell.jpg" style="max-height:500px">
+
 ### Use a tiling window manager
 
 If you're the tiling window manager, check out [FancyZones](https://github.com/microsoft/PowerToys/tree/master/src/modules/fancyzones). It's part of [PowerToys](https://github.com/microsoft/PowerToys).
