@@ -204,9 +204,9 @@ Pin `\\wsl$\Ubuntu` to Quick Access
 
 <img src="images/quick-access.png">
 
-### Map Ubuntu to Widnows Drive
+### Map Ubuntu to Windows Drive
 
-This allows you to access Linux's file system from applications which cannot access netowrk paths e.g. PowerShell.
+This allows you to access Linux's file system from older Windows applications which cannot access network paths.
 
 <img src="images/map-network-drive-menu.jpg"><br />
 
